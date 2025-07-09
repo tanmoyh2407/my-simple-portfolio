@@ -1,18 +1,22 @@
-
 .open-sans-normal {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 /* Shared Style */
 
-.text_primary{
+.secondary_bg {
+    background-color: #FFF8F3;
+}
+
+.text_primary {
     color: #FD6E0A;
 }
-.btn_primary{
+
+.btn_primary {
     background-color: #FD6E0A;
     color: white;
     padding: 18px 35px;
@@ -26,64 +30,124 @@
 
 /* Header Style */
 
-.header{
+.header {
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
+    /* background-position: left calc(100% - 150px), right calc(100% - 80px); */
+    /* background-color: aqua; */
+    /* background-color: #FFF8F3; */
 }
 
 /* Navigation Style */
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 50px 200px;
 }
 
-.nav_title{
-    font-weight:800;
+.nav_title {
+    font-weight: 800;
     font-size: 45px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin-right: 50px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
 }
-.dark_2{
+
+.dark_2 {
     color: #474747;
 }
 
 /* Banner Styles */
 
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     margin: 0 0 0 200px;
+    /* background-color: #FFF8F3; */
 }
-.banner_content{
+
+.banner_content {
     max-width: 790px;
+    /* max-width: 500px; */
+    /* background-color: aqua; */
 }
-.banner_greeting{
-    font-size: 45px;
+
+.banner_greeting {
+    font-size: 35px;
     font-weight: 600;
 }
-.banner_title{
-    font-size: 85px;
+
+.banner_title {
+    font-size: 55px;
     font-weight: bold;
     color: #181818;
 }
-.banner_description{
+
+.banner_description {
     color: #757575;
-    font-weight:normal;
+    font-weight: normal;
     font-size: 18px;
 }
-.banner_image{
+
+.banner_image {
     width: 600px;
+    /* margin-bottom: 81px; */
+}
+
+/* section styles start */
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section styles */
+.about {
+    border-radius: 10px;
+    margin-top: 130px;
+    padding: 100px 120px;
+    text-align: center;
+}
+
+.section_title {
+    color: #181818;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+.section_description {
+    text-align: center;
+    color: #757575;
+    font-size: 18px;
+}
+.about_items{
+    display: flex;
+    justify-content: space-around;
+}
+/* .about_item{
+
+} */
+.about_title{
+    color: #757575;
+    font-size: 20px;
+}
+.about_description{
+    color: #474747;
+    font-size: 20px;
+    font-weight: bold;
 }
