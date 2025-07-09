@@ -10,6 +10,8 @@
 
 .secondary_bg {
     background-color: #FFF8F3;
+    animation: lightColorChange 6s infinite;
+    transition: background-color 1s ease-in-out;
 }
 
 .text_primary {
@@ -28,6 +30,42 @@
     border-radius: 5px;
 }
 
+.btn_secondary {
+    margin-top: 50px;
+}
+
+.text_align {
+    text-align: center;
+}
+
+
+
+hr {
+    height: 3px;
+    border: none;
+    animation: changeColor 6s infinite;
+}
+
+/* Animation keyframes */
+@keyframes changeColor {
+    0% {
+        background-color: rgb(34, 255, 0);
+    }
+
+    33% {
+        background-color: blue;
+    }
+
+    66% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: rgb(0, 255, 4);
+    }
+}
+
+`
 /* Header Style */
 
 .header {
@@ -45,7 +83,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 0px 200px;
 }
 
 .nav_title {
@@ -101,6 +139,7 @@ nav ul li a {
     color: #757575;
     font-weight: normal;
     font-size: 18px;
+    margin-bottom: 45px;
 }
 
 .banner_image {
@@ -115,6 +154,11 @@ main {
     margin: 0 auto;
 }
 
+main section {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
 /* about section styles */
 .about {
     border-radius: 10px;
@@ -127,7 +171,7 @@ main {
     color: #181818;
     font-weight: bold;
     font-size: 35px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section_description {
@@ -135,19 +179,169 @@ main {
     color: #757575;
     font-size: 18px;
 }
-.about_items{
+
+.about_items {
     display: flex;
     justify-content: space-around;
 }
+
 /* .about_item{
 
 } */
-.about_title{
+.about_title {
     color: #757575;
     font-size: 20px;
 }
-.about_description{
+
+.about_description {
     color: #474747;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* Skills Sections */
+.skills {}
+
+.skills_container {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 24px;
+}
+
+.skill {
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 30px 0px 30px 0px;
+    animation: lightColorChange 6s infinite;
+    /* transition: background-color 1s ease-in-out; */
+    transition: all 0.4s ease-in-out;
+    animation-play-state: running;
+}
+
+.skill:hover {
+  background-color: #f9f9ff;
+  transform: scale(1.10);
+  box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.15);
+
+  animation-play-state: paused;
+}
+
+@keyframes lightColorChange {
+    0% {
+        background-color: #ffe4e1;
+    }
+
+    /* light pink */
+    25% {
+        background-color: #e0ffff;
+    }
+
+    /* light cyan */
+    50% {
+        background-color: #f0fff0;
+    }
+
+    /* honeydew */
+    75% {
+        background-color: #ffffe0;
+    }
+
+    /* light yellow */
+    100% {
+        background-color: #ffe4e1;
+    }
+
+    /* back to light pink */
+}
+
+.skill_title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.skills_section_description {
+    margin: 0px 130px 40px 130px;
+}
+
+.skill_description {
+    font-size: 16px;
+    color: #757575;
+}
+
+/* Resume Styles Start */
+
+.resume {}
+
+.resume_section_title {}
+
+.resume_container {
+    display: flex;
+    gap: 24px;
+}
+
+.resume_column {}
+
+.resume_column_title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #474747;
+}
+
+.experience {}
+
+.experience_title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #474747;
+}
+
+.experience_sub_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.experience_description {
+    font-size: 16px;
+    color: #757575;
+
+}
+
+/* footer styles */
+footer{
+    padding: 120px 210px;
+    display: flex;
+    gap: 115px;
+}
+.footer_column{
+    width: 50%;
+}
+.footer_description{
+    color: #474747;
+    font-size: 16px;
+}
+.footer_social_icons{
+    
+}
+footer input[type="text"], footer input[type="email"], footer textarea{
+    font-size: 16px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+}
+footer textarea{
+    font-size: 16px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
 }
